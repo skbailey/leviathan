@@ -1,5 +1,12 @@
 extends layout
 
+block styles
+  link(rel='stylesheet', href='/stylesheets/typed.css')
+
+block scripts
+  script(src='/javascripts/vendor/typed.js')
+  script(src='/javascripts/lib/typed.js')
+
 block content
   main#home
     article
@@ -7,12 +14,13 @@ block content
         figure.profile
           img(src='/images/sherardbailey.jpg', alt='Sherard Bailey on the beach in Tel Aviv')
           figcaption
-            h2.text-center Sherard Bailey
+            h1.text-center
+              span.h2.name
       section.bio 
         p I'm a software engineer based in New York City
         p.
-          I really like <strong>EcmaScript 6</strong>, <strong>Swift</strong>, <strong>Ruby on Rails</strong>, <strong>BDD</strong> and <strong>functional programming</strong>. 
-          I'm also heavily into traveling, #fitness, chess, and a major francophile... <em>alors, ici on parle 
+          I really like <strong>EcmaScript 6</strong>, <strong>Node</strong>, <strong>Swift</strong>, <strong>Ruby on Rails</strong>, <strong>BDD</strong> and <strong>functional programming</strong>. 
+          I'm also heavily into traveling, #fitness, chess and a major francophile... <em>alors, ici on parle 
           français aussi!</em>
       section.social
         ul.social-icons
