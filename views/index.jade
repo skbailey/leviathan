@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  main#home
+    article
+      section.intro
+        figure.profile
+          img(src='/images/sherardbailey.jpg', alt='Sherard Bailey on the beach in Tel Aviv')
+          figcaption
+            h2.text-center Sherard Bailey
+      section.bio 
+        p I'm a software engineer based in New York City
+        p.
+          I really like <strong>EcmaScript 6</strong>, <strong>Swift</strong>, <strong>Ruby on Rails</strong>, <strong>BDD</strong> and <strong>functional programming</strong>. 
+          I'm also heavily into traveling, #fitness, chess, and a major francophile... <em>alors, ici on parle 
+          français aussi!</em>
+      section.social
+        ul.social-icons
+          li.twitter 
+            a(href='https://twitter.com/sh3r4rd', target='_blank') Twitter
+          li.linkedin
+            a(href='https://www.linkedin.com/in/sherardbailey', target='_blank') LinkedIn
+          li.github
+            a(href='https://www.github.com/skbailey', target='_blank') Github
+
