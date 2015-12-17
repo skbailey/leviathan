@@ -2,25 +2,37 @@
   margin-bottom: 60px;  
 }
 
+#home section:last-child {
+  margin-bottom: 0;  
+}
+
 #home article {
-  margin: 5% 10%;
+  margin: 5% 0;
+}
+
+@media screen and (min-width: 768px) {
+  #home article {
+    margin: 5% 10%;
+  }
 }
 
 .profile {
-  width: 300px;
+  max-width: 300px;
   margin: 0 auto;
 }
 
 .profile img {
-  width: 300px;
-  height: 300px;
+  width: 100%;
   border-radius: 150px;
 }
 
+/* Social Icons */
+
 .social-icons {
-  list-style-type: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  list-style-type: none;
 }
 
 .social-icons li {
