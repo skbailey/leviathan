@@ -1,7 +1,7 @@
 extends layout
 
 block styles
-  link(rel='stylesheet', href='/stylesheets/typed.css')
+  link(rel='stylesheet', href='/stylesheets/vendor/typed.css')
 
 block scripts
   script(src='/javascripts/vendor/typed.js')
@@ -12,10 +12,11 @@ block content
     article
       section.intro
         figure.profile
-          img(src='/images/sherardbailey.jpg', alt='Sherard Bailey on the beach in Tel Aviv')
+          .photo
+            img(src='/images/sherardbailey.jpg', alt='Sherard Bailey on the beach in Tel Aviv')
           figcaption
             h1.text-center(title="Sherard Bailey")
-              span.h2.name sherodbail.ee
+              span.name sherodbail.ee
             h2.text-center
               a.btn.btn-default(href='http://whois.sherodbail.ee', title='Blog')
                 span.glyphicon.glyphicon-pencil
@@ -26,11 +27,7 @@ block content
           I'm also heavily into traveling, #fitness, chess and a major francophile... <em>alors, ici on parle 
           français aussi!</em>
       section.social
-        ul.social-icons
-          li.twitter 
-            a(href='https://twitter.com/sh3r4rd', target='_blank', title="Twitter") Twitter
-          li.linkedin
-            a(href='https://www.linkedin.com/in/sherardbailey', target='_blank', title="LinkedIn") LinkedIn
-          li.github
-            a(href='https://www.github.com/skbailey', target='_blank', title='Github') Github
+        a.btn.ion-social-twitter.color-swatch.gray-darker(href='https://twitter.com/sh3r4rd', target='_blank', title="Twitter")
+        a.btn.ion-social-linkedin(href='https://www.linkedin.com/in/sherardbailey', target='_blank', title="LinkedIn")
+        a.btn.ion-social-github(href='https://www.github.com/skbailey', target='_blank', title='Github')
 

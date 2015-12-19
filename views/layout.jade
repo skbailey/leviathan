@@ -8,8 +8,10 @@ html
     meta(name='description', content='A website about Sherard Bailey')
     meta(name='keywords', content='programmer developer mathematics computer science code')
     meta(name='author', content='Sherard Bailey')
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7', crossorigin='anonymous')
-    link(rel='stylesheet', href='/stylesheets/base.css')
+
+    link(rel='stylesheet', href='/stylesheets/vendor/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/vendor/ionicons.css')
+    link(rel='stylesheet', href='/stylesheets/lib/base.css')
     block styles
   body
     .container-fluid
@@ -17,5 +19,5 @@ html
         .col-md-12
           block content
     script(src="/javascripts/vendor/jquery.js")
-    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin="anonymous")
+    script(src='/javascripts/vendor/bootstrap.js')
     block scripts

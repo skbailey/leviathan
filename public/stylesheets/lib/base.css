@@ -1,0 +1,71 @@
+/* Global */
+
+h1 {
+  font: 2em Impact, 'Arial Black', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 4em;
+  }
+}
+
+
+/* Homepage */
+
+#home section {
+  font: 1.2em/1.5em 'Georgia', 'Times New Roman', serif;
+  margin-bottom: 60px;  
+}
+
+#home section:last-child {
+  margin-bottom: 0;
+}
+
+#home section p {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #home section p {
+    width: 70%;
+    margin: 0 auto 20px;
+  }
+}
+
+#home article {
+  margin: 5% 0;
+}
+
+@media screen and (min-width: 768px) {
+  #home article {
+    margin: 5% 10%;
+  }
+}
+
+
+/* Profile */
+
+.profile .photo {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.profile img {
+  width: 100%;
+  border-radius: 150px;
+}
+
+
+/* Social Icons */
+
+.social a {
+  color: #333;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.social a:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
