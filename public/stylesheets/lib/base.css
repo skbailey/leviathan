@@ -1,12 +1,45 @@
 /* Global */
 
 h1 {
-  font: 2em Impact, 'Arial Black', sans-serif;
+  font: 1.5em Impact, 'Arial Black', sans-serif;
 }
 
+/* Mobile */
+@media screen and (max-width: 768px) {
+  main {
+    margin-top: 15px;   
+  }
+}
+
+/* Tablets and Desktops */
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 4em;
+  }
+
+  main {
+    margin: 10%;
+  }
+}
+
+/* Desktops */
+@media screen and (min-width: 992px) {
+  main {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+  }
+
+  main article {
+    max-width: 900px;
+    margin: auto auto;
   }
 }
 
@@ -28,18 +61,7 @@ h1 {
 
 @media screen and (min-width: 768px) {
   #home section p {
-    width: 70%;
-    margin: 0 auto 20px;
-  }
-}
-
-#home article {
-  margin: 5% 0;
-}
-
-@media screen and (min-width: 768px) {
-  #home article {
-    margin: 5% 10%;
+    margin-bottom: 20px;
   }
 }
 
