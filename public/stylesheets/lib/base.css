@@ -1,8 +1,15 @@
 /* Global */
 
 h1 {
-  font: 1.5em Impact, 'Arial Black', sans-serif;
+  font: 700 2em 'HelveticaNeue-Bold', Impact, 'Arial Black', sans-serif;
 }
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-family: Impact;
+  }
+}
+
 
 /* Mobile */
 @media screen and (max-width: 768px) {
