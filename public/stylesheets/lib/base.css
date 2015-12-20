@@ -1,7 +1,63 @@
 /* Global */
 
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+main {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+main header {
+  background: transparent url('/images/skyscraper.jpeg') no-repeat scroll center center;
+  background-size: cover;
+  min-height: 50%;
+}
+
+main article {
+  position: relative;
+}
+
+@media screen and (min-width: 320px) {
+  main article {
+    min-height: 50%;
+  }
+}
+
+@media screen and (max-height: 568px) {
+  main article {
+    min-height: 300px;
+    position: relative;
+  }
+}
+
+main article section {
+  font: 1.2em/1.5em 'Georgia', 'Times New Roman', serif;
+}
+
+main article section:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  main article section p {
+    margin-bottom: 20px;
+  }
+}
+
 h1 {
+  color: #fff;
   font: 700 2em 'HelveticaNeue-Bold', Impact, 'Arial Black', sans-serif;
+  margin: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -10,70 +66,49 @@ h1 {
   }
 }
 
-
-/* Mobile */
-@media screen and (max-width: 768px) {
-  main {
-    margin-top: 15px;   
-  }
-}
-
-/* Tablets and Desktops */
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 4em;
-  }
-
-  main {
-    margin: 10%;
+    font-size: 3em;
   }
 }
 
-/* Desktops */
-@media screen and (min-width: 992px) {
-  main {
-    margin: 0;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-    display: -ms-flexbox;  /* TWEENER - IE 10 */
-    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-    display: flex;
+@media screen and (min-width: 1600px) {
+  h1 {
+    font-size: 5em;
   }
+}
 
-  main article {
-    max-width: 900px;
+.flex-container {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+}
+
+.flex-container-vertical-align {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flex-container-vertical-spaced {
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+
+/* Profile */
+
+.profile {
+  margin: 15px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .profile {
     margin: auto auto;
   }
 }
 
 
-/* Homepage */
-
-#home section {
-  font: 1.2em/1.5em 'Georgia', 'Times New Roman', serif;
-  margin-bottom: 50px;  
-}
-
-#home section:last-child {
-  margin-bottom: 0;
-}
-
-#home section p {
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  #home section p {
-    margin-bottom: 20px;
-  }
-}
-
-
-/* Profile */
 
 .profile .photo {
   max-width: 300px;
@@ -86,15 +121,86 @@ h1 {
 }
 
 
+/* Bio */
+
+.bio {
+  padding: 0 15px;
+  position: absolute;
+  left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .bio {
+    min-height: calc(100% - 3em);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bio {
+    width: 80%;
+    height: 100%;
+  }
+
+  .bio p {
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+   .bio p {
+    font-size: 1.8em;
+    line-height: 1.8em;
+  }
+}
+
+
 /* Social Icons */
+
+.social {
+  position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+  .social {
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social {
+    right: 0;
+    width: 20%;
+    height: 100%;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    justify-content: space-around;
+    flex-direction: column;
+  }
+}
 
 .social a {
   color: #333;
-  font-size: 2em;
   cursor: pointer;
 }
 
-.social a:first-child {
-  margin-left: 0;
-  padding-left: 0;
+@media screen and (max-width: 768px) {
+  .social a {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social a {
+    font-size: 3em;  
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .social a {
+    font-size: 4em; 
+  }
 }

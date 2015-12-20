@@ -8,21 +8,19 @@ block scripts
   script(src='/javascripts/lib/typed.js')
 
 block content
-  main#home
-    article
-      section.intro
-        figure.profile
-          .photo
-            img(src='/images/sherardbailey.jpg', alt='Sherard Bailey on the beach in Tel Aviv')
-          figcaption
-            h1.text-center(title="Sherard Bailey")
+  main
+    header.flex-container
+      figure.profile
+        .photo
+          img(src='/images/sherardbailey.jpg', alt='Sherard Bailey on the beach in Tel Aviv')
+        figcaption
+          h1.text-center(title="Sherard Bailey")
               span.name sherodbail.ee
-            h2.text-center
-              a.btn.btn-default(href='http://whois.sherodbail.ee', title='Blog')
-                span.glyphicon.glyphicon-pencil
-      section.bio 
-        p I'm <s>a software engineer</s> an engineering leviathan based in New York City
-        p.
+    
+    article
+      section.bio.flex-container.flex-container-vertical-align
+        p.text-center I'm <s>a software engineer</s> an engineering leviathan based in New York City
+        p.text-center.
           I really like <strong>EcmaScript 6</strong>, <strong>Node</strong>, <strong>Swift</strong>, <strong>Ruby on Rails</strong>, <strong>BDD</strong> and <strong>functional programming</strong>. 
           I'm also heavily into traveling, #fitness, chess and a major francophile... <em>alors, ici on parle 
           français aussi!</em>
@@ -30,4 +28,3 @@ block content
         a.btn.ion-social-twitter.color-swatch.gray-darker(href='https://twitter.com/sh3r4rd', target='_blank', title="Twitter")
         a.btn.ion-social-linkedin(href='https://www.linkedin.com/in/sherardbailey', target='_blank', title="LinkedIn")
         a.btn.ion-social-github(href='https://www.github.com/skbailey', target='_blank', title='Github')
-
